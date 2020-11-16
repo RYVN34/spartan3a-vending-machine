@@ -220,16 +220,16 @@ end process;
    with bcd select
 
 	Seven_Segment_Display_output(7 downto 0) <= B"00000011" when 0,
-															  B"10011111" when 1,
-															  B"00100101" when 2,
-															  B"00001101" when 3,
-															  B"10011001" when 4,
-															  B"01001001" when 5,
-															  B"01000001" when 6,
-															  B"00011111" when 7,
-															  B"00000001" when 8,
-															  B"00011001" when 9,
-															  B"11111111" when others;
+						    B"10011111" when 1,
+						    B"00100101" when 2,
+						    B"00001101" when 3,
+						    B"10011001" when 4,
+						    B"01001001" when 5,
+					            B"01000001" when 6,
+						    B"00011111" when 7,
+						    B"00000001" when 8,
+						    B"00011001" when 9,
+						    B"11111111" when others;
 					  			
 -- send data to seven segment display.
 Seven_Segment_Display(7 downto 0) <= Seven_Segment_Display_output(7 downto 0);  
