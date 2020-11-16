@@ -3,15 +3,15 @@ use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 
 entity all_three_segments_module is
-	port (    clock_in : in std_logic;
-			       reset : in std_logic;          -- reset money
-    price_selector : in std_logic_vector(7 downto 0);
-			      nickel : in std_logic;  -- 5 cents
-		      	  dime : in std_logic; -- 10 cents
-	         quarter : in std_logic; -- 50 cents
-		        dollar : in std_logic; -- 100 cents
-		           pay : in std_logic;
-				       LED : out std_logic_vector(7 downto 0);
+      port ( clock_in : in std_logic;
+		reset : in std_logic;          -- reset money
+       price_selector : in std_logic_vector(7 downto 0);
+	       nickel : in std_logic;  -- 5 cents
+		 dime : in std_logic; -- 10 cents
+	      quarter : in std_logic; -- 50 cents
+	       dollar : in std_logic; -- 100 cents
+		  pay : in std_logic;
+	          LED : out std_logic_vector(7 downto 0);
  Seven_Segment_Enable : out std_logic_vector(2 downto 0);
 Seven_Segment_Display : out std_logic_vector(7 downto 0));
 
